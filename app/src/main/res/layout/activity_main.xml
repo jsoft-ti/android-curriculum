@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="br.com.dispositivosmoveis.curriculum.MainActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/imagem"
+        android:src="@drawable/jc"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagem"
+        android:id="@+id/btnDadosPessoais"
+        android:text="Dados Pessoais"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDadosProfissionais"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnDadosPessoais"
+        android:text="Dados Profissionais"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnContato"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDadosProfissionais"
+        android:text="Contato"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnContato"
+        android:text="Enviar Email"/>
+</RelativeLayout>
